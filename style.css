@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+@font-face {
+  font-family: "Anurati";
+  src: url('/Fonts/Anurati-Regular.otf');
+}
+
+@font-face {
+  font-family: "Achron";
+  src: url('/Fonts/DoctorGlitch.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#pg-1 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#pg-2 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #111010;
+  display: flex;
+}
+
+#container3D {
+  width: 55vw;
+  height: 100vh;
+}
+
+#container3D2 {
+  width: 55vw;
+  height: 100vh;
+}
+
+#canvas {
+  width: 55vw;
+}
+
+#canvas2 {
+  width: 55vw;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100ww;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#pg1-header , #pg2-header{
+  color: white;
+  font-family: "Achron";
+  font-size: 3rem;
+  letter-spacing: 0.7rem;
+  line-height: 4.5rem;
+  text-transform: uppercase;
+  animation: fade 1 linear 2s;
+}
+
+
+#pg1-aside, #pg2-aside {
+  width: 45vw;
+  height: 100%;
+  background-color: #111010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+} 
+
+#pg1-aside {
+  padding: 0 0 0 70px;
+}
+
+#pg2-aside {
+  padding: 0 70px 0 0;
+}
+
+#pg1-aside p, #pg2-aside p{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+
+.red {
+  transform: translateY(5px);
+  height: 78px;
+  color: #ff4343;
+}
+
+#pg2-header {
+  display: inline-block;
+  color: rgba(0, 0, 255, 0.774);
+  display: flex;
+  align-items: end;
+  animation: scrollUp 1 linear 2s forwards;
+}
+
+#up span, #down span{
+  display: inline-block;
+  display: flex;
+  align-items: end;
+  animation: scrollUp 1 linear 2s forwards;
+}
+
+#up, #down{
+  display: inline-block;
+  overflow: hidden;
+}
+
+@keyframes fade {
+  0% {
+    color: #111010;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes scrollUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(30%);
+  }
+}
